@@ -9,18 +9,18 @@ import { BiGridVertical } from "react-icons/bi";
 import { PiLineVerticalBold } from "react-icons/pi";
 
 function App() {
-  const [activeSection, setActiveSection] = useState('about'); 
+  const [activeSection, setActiveSection] = useState('about');
 
   return (
     <div className="App flex h-screen bg-gray-900">
       
       <div className="w-1/2 mt-10 mb-10 ml-16 mr-4 bg-gray-500 rounded-[20px]">
-       
+        {/* Left Side Content */}
       </div>
 
-      
       <div className="w-1/2 flex flex-col bg-gray-900">
         
+        {/* Upper Section */}
         <div className="flex flex-col ml-10 mt-10 mb-10 mr-14 bg-gray-700 text-gray-300 rounded-[20px] h-[400px]">
          
           <div className="flex items-center p-2 mt-4 ml-2 bg-gray-700">
@@ -29,7 +29,6 @@ function App() {
               <FaRegQuestionCircle />
             </div>
 
-           
             <div className="flex justify-around items-center bg-black rounded-[20px] h-[60px] w-full">
               <div
                 className={`flex items-center justify-center h-[50px] w-[150px] ${activeSection === 'about' ? 'bg-gray-900 shadow-md' : 'bg-black'} rounded-[20px] transition-shadow duration-300`}
@@ -52,7 +51,6 @@ function App() {
                 Recommended
               </div>
             </div>
-
           </div>
 
           <div className="flex items-center p-2 mt-4 ml-2 bg-gray-700">
@@ -64,13 +62,14 @@ function App() {
               {activeSection === 'experience' && <Experience />}
               {activeSection === 'recommendation' && <Recommendation />}
             </div>
-            <div className=" text-6xl text-gray-300" style={{ height: '100px' }}>
+            <div className="text-6xl text-gray-300" style={{ height: '100px' }}>
               <PiLineVerticalBold className="h-full" />
             </div>
           </div>
         </div>
-       
-        <div className="h-1/2 ml-10 mb-10 mr-14 bg-gray-700 rounded-[20px]">
+
+        {/* Gallery Section */}
+        <div className="flex-grow flex-shrink-0 ml-10 mb-10 mr-14 bg-gray-700 rounded-[20px]">
           <Gallery />
         </div>
       </div>
