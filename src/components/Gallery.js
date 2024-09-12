@@ -100,7 +100,7 @@ function Gallery() {
               key={index}
               src={image}
               alt={`Uploaded ${index}`}
-              className="w-40 h-40 mt-4 ml-5 mr-5 object-cover rounded-[20px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 scroll-image"
+              className="w-38 h-38 mt-4 ml-5 mr-5 object-cover rounded-[20px] flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 scroll-image"
             />
           ))}
         </div>
