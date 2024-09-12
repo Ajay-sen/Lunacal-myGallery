@@ -12,7 +12,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   return (
-    <div className="App flex h-screen bg-gray-900">
+    <div className="App flex min-h-screen bg-gray-900">
       
       <div className="w-1/2 mt-10 mb-10 ml-16 mr-4 bg-gray-500 rounded-[20px]">
         {/* Left Side Content */}
@@ -21,7 +21,7 @@ function App() {
       <div className="w-1/2 flex flex-col bg-gray-900">
         
         {/* Upper Section */}
-        <div className="flex flex-col ml-10 mt-10 mb-10 mr-14 bg-gray-700 text-gray-300 rounded-[20px] h-[400px]">
+        <div className="flex flex-col flex-grow ml-10 mt-10 mb-10 mr-14 bg-gray-700 text-gray-300 rounded-[20px]">
          
           <div className="flex items-center p-2 mt-4 ml-2 bg-gray-700">
            
@@ -69,7 +69,7 @@ function App() {
         </div>
 
         {/* Gallery Section */}
-        <div className="flex-grow flex-shrink-0 ml-10 mb-10 mr-14 bg-gray-700 rounded-[20px]">
+        <div className="flex-grow-0 ml-10 mb-10 mr-14 bg-gray-700 rounded-[20px]">
           <Gallery />
         </div>
       </div>
