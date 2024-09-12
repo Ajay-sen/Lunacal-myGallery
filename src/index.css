@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add this CSS to handle shadow for active tab */
+.shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Adjust the shadow to your preference */
+  }
+
+  /* CSS for shadow effect */
+.shadow-md {
+    box-shadow: 8px 12px 18px rgba(0, 0, 0, 0.8); /* Dark black shadow */
+  }
+  
+  

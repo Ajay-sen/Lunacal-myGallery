@@ -1,0 +1,37 @@
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.gallery-image {
+  max-width: 500px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  
+
+  .custom-shadow {
+    box-shadow: 
+      6px 6px 12px rgba(0, 0, 0, 0.9),
+      -2px -2px 4px rgba(255, 255, 255, 0.5); 
+  }
+
+  .icon-shadow {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+    border-radius: 50%;
+  }
+  
+  
+  
